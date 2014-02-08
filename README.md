@@ -16,10 +16,13 @@ requirejs-package
 
 测试主要是针对`js`文件，`css`文件，分为在单独文件内的重复依赖测试，在文件引用文件（嵌套依赖）的依赖测试。
 
-测试表明打包正确，并且请求不重复。
 
 ***
 比如：模块`d.js`依赖于`a.js`，模块`b.js`，`e.js`依赖于`b.js`，`c.js`，`de.js`启动文件依赖于`d.js`，`e.js`。那么，调用了`de.js`会不会导致`b.js`的重复请求和重复合并呢？
+
+测试表明打包正确，并且请求不重复。
+
+***
 
 ##文件配置
 
@@ -37,6 +40,6 @@ requirejs-package
 
 见本人博客分享：
 
-[前端优化：RequireJS Optimizer 的使用和配置方法（一）](http://blog.segmentfault.com/f2e/1190000000394849)
-[前端优化：RequireJS Optimizer 的使用和配置方法（二）](http://blog.segmentfault.com/f2e/1190000000395435)
+* [前端优化：RequireJS Optimizer 的使用和配置方法（一）](http://blog.segmentfault.com/f2e/1190000000394849)
+* [前端优化：RequireJS Optimizer 的使用和配置方法（二）](http://blog.segmentfault.com/f2e/1190000000395435)
 
