@@ -30,8 +30,8 @@ requirejs-package
 
 见本人博客分享：
 
-http://blog.segmentfault.com/f2e/1190000000394849
-http://blog.segmentfault.com/f2e/1190000000395435
+[前端优化：RequireJS Optimizer 的使用和配置方法（一）](http://blog.segmentfault.com/f2e/1190000000394849)
+[前端优化：RequireJS Optimizer 的使用和配置方法（二）](http://blog.segmentfault.com/f2e/1190000000395435)
 
 ##如何使用
 
