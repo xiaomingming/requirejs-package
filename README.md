@@ -6,7 +6,7 @@ requirejs-package
 ##如何使用
 
 * fork项目到本地
-* 有node，git环境，执行命令 `npm install` 
+* 有node，git环境，进入到当前项目，git中执行命令 `npm install` 
 * 再执行 `grunt` 即可
 * 对比打包前的`dev`和打包后的`build`目录文件差别
 
