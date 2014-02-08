@@ -3,6 +3,13 @@ requirejs-package
 
 提供了对grunt requirejs 以及require js 的打包及依赖测试示例
 
+##如何使用
+
+* fork项目到本地
+* 有node，git环境，执行命令 `npm install` 
+* 再执行 `grunt` 即可
+* 对比打包前的`dev`和打包后的`build`目录文件差别
+
 ##详细描述
 
 该项目使用了极其简单的示例，来说明如何使用`grunt-contrib-requirejs`进行对`require` js的依赖模块进行打包。并且进行了测试。 
@@ -33,9 +40,3 @@ requirejs-package
 [前端优化：RequireJS Optimizer 的使用和配置方法（一）](http://blog.segmentfault.com/f2e/1190000000394849)
 [前端优化：RequireJS Optimizer 的使用和配置方法（二）](http://blog.segmentfault.com/f2e/1190000000395435)
 
-##如何使用
-
-* fork项目到本地
-* 有node，git环境，执行命令 `npm install` 
-* 再执行 `grunt` 即可
-* 对比打包前的`dev`和打包后的`build`目录文件差别
