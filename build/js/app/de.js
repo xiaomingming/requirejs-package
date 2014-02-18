@@ -1,0 +1,2 @@
+define("a",[],function(){return{v:1,info:"welcome to a demo"}}),define("b",[],function(){return{v:1,info:"welcome to b demo"}}),define("d",["a","b"],function(n,e){var o=n.info+","+e.info;return{info:o}}),define("c",[],function(){return{v:1,info:"welcome to c demo"}}),define("e",["b","c"],function(n,e){var o=n.info+","+e.info;return{info:o}}),require(["d","e"],function(n,e){var o=n.info+","+e.info;document.body.innerHTML=o}),define("de",function(){});
+//# sourceMappingURL=de.js.map

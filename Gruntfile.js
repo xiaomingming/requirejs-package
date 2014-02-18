@@ -7,6 +7,10 @@ module.exports = function(grunt) {
                     appDir: './dev',
                     baseUrl: 'js',
                     dir: './build',
+                    optimize: 'uglify2',
+                    generateSourceMaps: true,
+                    preserveLicenseComments: false,
+                    // useSourceUrl: true,
                     optimizeCss: 'standard.keepComments.keepLines',
                     paths: {
                         'jquery': 'libs/jquery-1.8.2',
@@ -26,37 +30,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-            },
-            build: {
-                src: './dev/js/**/*.js',
-                dest: './build/js/all.min.js'
-            }
-        },
-        less: {
-            dist: {
-                options: {
-                    paths: './dev/styles/',
-                    sourceMap: true,
-                    sourceMapFilename: 'lala.map'
-                },
-                files: [{
-                    expand: true,
-                    cwd: './dev/styles/app/',
-                    src: ['*.less'],
-                    dest: './dev/styles/app/',
-                    ext: '.css'
-                }, {
-                    expand: true,
-                    cwd: './dev/styles/less/',
-                    src: ['*.less'],
-                    dest: './dev/styles/css/',
-                    ext: '.css'
-                }]
-            }
-        },
         csscomb: {
             options: {
                 config: './dev/styles/less/csscomb.json'
@@ -69,18 +42,6 @@ module.exports = function(grunt) {
                     dest: './dev/styles/css/',
                     ext: '.css'
                 }]
-            }
-        },
-        cssmin: {
-            options: {
-                keepSpecialComments: 0
-            },
-            build: {
-                expand: true,
-                cwd: './dev/styles/app/',
-                src: '*.css',
-                dest: './dev/styles/app/',
-                ext: '.min.css'
             }
         },
         imagemin: {
@@ -110,5 +71,5 @@ module.exports = function(grunt) {
 
 
     // 注册任务
-    grunt.registerTask('default', ['requirejs', 'uglify', 'less', 'csscomb', 'cssmin', 'imagemin']);
+    grunt.registerTask('default', ['requirejs', 'csscomb', 'imagemin']);
 };
