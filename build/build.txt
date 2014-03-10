@@ -10,22 +10,15 @@ styles/app/../b.css
 styles/app/../c.css
 styles/app/abc.css
 
-styles/app/abc.min.css
-----------------
-styles/app/abc.min.css
-
 styles/app/de.css
 ----------------
 styles/app/../a.css
 styles/app/../b.css
+styles/app/../easySwitch.css
 styles/app/../d.css
 styles/app/../c.css
 styles/app/../e.css
 styles/app/de.css
-
-styles/app/de.min.css
-----------------
-styles/app/de.min.css
 
 styles/b.css
 ----------------
@@ -39,6 +32,7 @@ styles/d.css
 ----------------
 styles/a.css
 styles/b.css
+styles/easySwitch.css
 styles/d.css
 
 styles/e.css
@@ -46,6 +40,10 @@ styles/e.css
 styles/b.css
 styles/c.css
 styles/e.css
+
+styles/easySwitch.css
+----------------
+styles/easySwitch.css
 
 js/app/de.js
 ----------------

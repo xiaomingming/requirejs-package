@@ -1,17 +1,29 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        csscomb: {
+            options: {
+                config: './dev/styles/less/csscomb.json'
+            },
+            files: {
+                expand: true,
+                cwd: './dev/styles/',
+                src: ['**/*.css'],
+                dest: './dev/styles/',
+                ext: '.css'
+            }
+        },
         requirejs: {
             build: {
                 options: {
                     appDir: './dev',
                     baseUrl: 'js',
                     dir: './build',
-                    optimize: 'uglify2',
-                    generateSourceMaps: true,
-                    preserveLicenseComments: false,
+                    /*optimize: 'uglify2',
+                    generateSourceMaps: false,
+                    preserveLicenseComments: false,*/
                     // useSourceUrl: true,
-                    optimizeCss: 'standard.keepComments.keepLines',
+                    optimizeCss: 'standard',
                     paths: {
                         'jquery': 'libs/jquery-1.8.2',
                         'a': 'utils/a',
@@ -28,20 +40,6 @@ module.exports = function(grunt) {
                         name: 'de'
                     }]
                 }
-            }
-        },
-        csscomb: {
-            options: {
-                config: './dev/styles/less/csscomb.json'
-            },
-            build: {
-                files: [{
-                    expand: true,
-                    cwd: './dev/styles/css/',
-                    src: ['*.css'],
-                    dest: './dev/styles/css/',
-                    ext: '.css'
-                }]
             }
         },
         imagemin: {
@@ -71,5 +69,5 @@ module.exports = function(grunt) {
 
 
     // 注册任务
-    grunt.registerTask('default', ['requirejs', 'csscomb', 'imagemin']);
+    grunt.registerTask('default', ['csscomb', 'requirejs', 'imagemin']);
 };

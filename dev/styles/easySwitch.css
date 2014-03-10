@@ -1,0 +1,89 @@
+/* 
+* easy-switch css
+*/
+/*样式请自行美化处理*/
+/*对于类名，若有冲突，自行更改css和js，配置js类名后，再更改css类名即可*/
+.switch-wrapper {
+  position: relative;
+  font-size: 12px;
+}
+.switch-wrapper * {
+  padding: 0;
+  margin: 0;
+}
+/*若想在domReady时进行轮播，则直接在对应的轮播html 包含块中加入宽度和高度，不要在此加入*/
+.switch-list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.switch-list * {
+  padding: 0;
+  margin: 0;
+}
+/*注意此处的z-index设置*/
+.switch-list .switch-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: none;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: #333;
+}
+.switch-list a img {
+  border: 0;
+}
+.switch-list li.prev {
+  z-index: 1;
+  display: block;
+}
+.switch-list li.current {
+  z-index: 2;
+  display: block;
+}
+.switch-number {
+  position: absolute;
+  bottom: 20px;
+  left: 396px;
+  z-index: 2;
+}
+.switch-number a {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  overflow: hidden;
+  color: #000;
+  text-decoration: none;
+  text-indent: -9999em;
+  background: #9c9c9c;
+  border-radius: 8px;
+}
+.switch-number a.current {
+  color: #fff;
+  background: #12aca3;
+}
+.switch-prev,.switch-next {
+  position: absolute;
+  top:50%;
+  z-index: 3;
+  width: 40px;
+  height: 22px;
+  margin-top: -11px;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #333;
+  border: 1px solid orange;
+}
+.switch-prev {
+  left: 0;
+}
+.switch-next {
+  right: 0;
+}

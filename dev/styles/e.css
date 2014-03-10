@@ -1,4 +1,7 @@
 /* e.css,include b.css,c.css*/
 @import 'b.css';
 @import 'c.css';
-.e-test h1 { border: 2px solid #333; font-size: 24px; }
+.e-test h1 {
+  font-size: 24px;
+  border: 2px solid #333;
+}

@@ -1,1 +1,0 @@
-{"version":3,"file":"requirejs-config.js","sources":["requirejs-config.js.src.js"],"names":["require","config","baseUrl","paths","jquery","a","b","c","d","e","de","test1","test2","requirejs","shim"],"mappings":"AAIAA,QAAQC,QACJC,QAAS,OACTC,OACIC,OAAU,oBACVC,EAAK,UACLC,EAAK,UACLC,EAAK,UACLC,EAAK,UACLC,EAAK,UACLC,GAAM,WACNC,MAAQ,cACRC,MAAQ,iBAIhBC,UAAUZ,QACNC,QAAS,MACTY"}

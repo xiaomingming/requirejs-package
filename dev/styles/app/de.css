@@ -1,3 +1,2 @@
-/* de.css,include d.css,e.css */
-@import '../d.css';
-@import '../e.css';
+@import url('../d.css');
+@import url('../e.css');

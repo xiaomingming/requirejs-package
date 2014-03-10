@@ -1,4 +1,12 @@
 /* d.css,include a.css,b.css*/
 @import 'a.css';
 @import 'b.css';
-.d-test h1 { border: 1px solid #ddd; font-size: 22px; }
+@import 'easySwitch.css';
+/* 
+* ldklfldlaldlfldlfdkl
+ */
+/* kdjfdkfdkf */
+.d-test h1 {
+  font-size: 22px;
+  border: 1px solid #ddd;
+}
