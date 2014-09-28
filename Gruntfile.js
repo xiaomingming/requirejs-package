@@ -1,3 +1,4 @@
+/*global module*/
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -58,12 +59,7 @@ module.exports = function(grunt) {
         }
     });
     grunt.loadNpmTasks('grunt-csscomb'); // css属性指定
-    grunt.loadNpmTasks('grunt-contrib-concat'); //文件合并
     grunt.loadNpmTasks('grunt-contrib-jshint'); //js检查
-    grunt.loadNpmTasks('grunt-contrib-less'); // scss
-    grunt.loadNpmTasks('grunt-contrib-uglify'); //文件混淆
-    grunt.loadNpmTasks('grunt-contrib-cssmin'); //css压缩
-    grunt.loadNpmTasks('grunt-contrib-htmlmin'); //html压缩
     grunt.loadNpmTasks('grunt-contrib-imagemin'); //图像压缩
     grunt.loadNpmTasks('grunt-contrib-requirejs'); //requirejs优化
 
